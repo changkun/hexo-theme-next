@@ -1,11 +1,11 @@
 <div class="copyright" >
-  {% set current = date(Date.now(), "YYYY") %}
-  &copy; {% if theme.since and theme.since != current %} {{ theme.since }} - {% endif %}
+  Copyright &copy; {% set current = date(Date.now(), "YYYY") %}
+  {% if theme.since and theme.since != current %} {{ theme.since }} - {% endif %}
   <span itemprop="copyrightYear">{{ current }}</span>
   <span class="with-love">
     <i class="fa fa-{{ theme.authoricon }}"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">{{ config.author }}</span>
+  <span class="author" itemprop="copyrightHolder">{{ config.author }}. Allrights reserved. | 蜀ICP备15009368号 </span>
 </div>
 
 {% if theme.copyright %}
@@ -18,5 +18,6 @@
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
     NexT.{{ theme.scheme }}
   </a>
+  , modified by Changkun Ou.
 </div>
 {% endif %}

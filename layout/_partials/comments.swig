@@ -14,7 +14,7 @@
     {% elseif theme.vkontakte_api.enable and theme.vkontakte_api.comments %}
       <div id="vk_comments"></div>
     {% elseif theme.disqus.enable %}
-      <div id="disqus_thread">
+      <div id="disqus_thread" style="transform: translateY(0px);">
         <noscript>
           Please enable JavaScript to view the
           <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>

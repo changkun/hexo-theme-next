@@ -47,9 +47,9 @@
                   </span>
                 {% endif %}
                 <a class="post-title-link" href="{{ url_for(post.path) }}" itemprop="url">{#
-                #}{{ post.title | default(__('post.untitled'))}}{#
+                #}#{{ post.id }} {{ post.title | default(__('post.untitled'))}}{#
               #}</a>{#
-            #}{% else %}{{ post.title }}{% endif %}{#
+            #}{% else %}#{{ post.id }} {{ post.title }}{% endif%}{#
           #}{% endif %}{#
         #}</{% if theme.seo %}h2{% else %}h1{% endif %}>
         {% endif %}

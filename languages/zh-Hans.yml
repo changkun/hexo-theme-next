@@ -37,9 +37,9 @@ post:
   wordcount: 'Words count:'
   min2read: Reading time
   copyright:
-    author: Post author
-    link: Post link
-    license_title: Copyright
+    author: 作者
+    link: 链接
+    license_title: 版权
     license_content: 'All posts in this blog are licensed under
       <a href="%s" rel="external nofollow" target="_blank">%s</a>.'
 

@@ -120,6 +120,7 @@
           </div>
         {% endif %}
 
+
         <div class="links-of-blogroll motion-element {{ "links-of-blogroll-inline" | default('inline') }}">
           <div class="links-of-blogroll-title">
             <i class="fa  fa-fw fa-desktop"></i>

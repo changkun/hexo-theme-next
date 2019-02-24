@@ -62,7 +62,7 @@ get_font_family(config) {
 }
 
 // Font families.
-$font-family-chinese      = "PingFang SC", "Microsoft YaHei"
+$font-family-chinese      = 'PingHei', 'PingFang SC', Helvetica Neue, 'Work Sans', 'Hiragino Sans GB', 'Microsoft YaHei', SimSun
 
 $font-family-base         = $font-family-chinese, sans-serif
 $font-family-base         = get_font_family('global'), $font-family-chinese, sans-serif if get_font_family('global')
@@ -91,7 +91,7 @@ $font-weight-bolder       = 700
 
 
 // Font size
-$font-size-base           = 14px
+$font-size-base           = 12px
 $font-size-small          = $font-size-base - 2px
 $font-size-smaller        = $font-size-base - 4px
 $font-size-large          = $font-size-base + 2px
@@ -158,7 +158,7 @@ $btn-font-weight                = normal
 $btn-default-radius             = 0
 $btn-default-bg                 = $black-deep
 $btn-default-color              = white
-$btn-default-font-size          = 14px
+$btn-default-font-size          = 12px
 $btn-default-border-width       = 2px
 $btn-default-border-color       = $black-deep
 $btn-default-hover-bg           = white
@@ -223,11 +223,11 @@ $brand-color                    = white
 $brand-hover-color              = white
 $brand-bg                       = $black-deep
 
-$logo-font-size                 = 20px
+$logo-font-size                 = 18px
 $logo-font-size                 = unit(hexo-config('font.logo.size'), px) if hexo-config('font.logo.size') is a 'unit'
 
 $site-subtitle-color            = $grey-dark
-$subtitle-font-size             = 13px
+$subtitle-font-size             = 12px
 $subtitle-color                 = $grey-dark
 
 // Menu

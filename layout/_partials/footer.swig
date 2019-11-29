@@ -5,7 +5,7 @@
   <span class="with-love">
     <i class="fa fa-{{ theme.authoricon }}"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">{{ config.author }}. Allrights reserved. | <a class="theme-link" href="www.beian.miit.gov.cn">蜀ICP备15009368号</a> </span>
+  <span class="author" itemprop="copyrightHolder">{{ config.author }}. Allrights reserved. | <a class="theme-link" href="http://www.beian.miit.gov.cn">蜀ICP备15009368号</a> </span>
 </div>
 
 {% if theme.copyright %}

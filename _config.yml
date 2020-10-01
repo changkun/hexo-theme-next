@@ -101,6 +101,7 @@ font:
   global:
     # external: true will load this font family from host.
     external: true
+    family:
 
   # Font settings for Headlines (h1, h2, h3, h4, h5, h6)
   # Fallback to `global` font settings.
@@ -143,7 +144,6 @@ social:
   Homepage: https://changkun.de/
   Github: https://github.com/changkun
   YouTube: https://www.youtube.com/channel/UCtujb7c9eudbVEkAsIRZR3w
-  Facebook: https://www.facebook.com/ouchangkun
   知乎: http://www.zhihu.com/people/ouchangkun
   Email: mailto:hi[at]changkun.us
 
@@ -158,7 +158,6 @@ social_icons:
   # KeyMapsToSocialItemKey: NameOfTheIconFromFontAwesome
   Homepage: home
   Github: github
-  Facebook: facebook-official
   YouTube: youtube
   知乎: book
   Email: envelope
@@ -236,8 +235,6 @@ post_meta:
 # Dependencies: https://github.com/willin/hexo-wordcount
 post_wordcount:
   item_text: true
-  wordcount: true
-  min2read: true
 
 
 reward_comment: 打赏催更
@@ -322,25 +319,14 @@ baidu_analytics: 85f3868c49f37355ac3687e549f804cd
 # Google Analytics
 google_analytics: UA-80889616-2
 
-# Yandex Webmaster tools verification setting
-# See: https://webmaster.yandex.ru/
-#yandex_site_verification:
-
 # CNZZ count
 #cnzz_siteid:
-
-# Show number of visitors to each article.
-# You can visit https://leancloud.cn get AppID and AppKey.
-leancloud_visitors:
-  enable: false
-  app_id: #<app_id>
-  app_key: #<app_key>
 
 # Show PV/UV of the website/page with busuanzi.
 # Get more information on http://ibruce.info/2015/04/04/busuanzi/
 busuanzi_count:
   # count values only if the other configs are false
-  enable: true
+  enable: false
   # custom uv span for the whole site
   site_uv: true
   site_uv_header: <i class="fa fa-user"></i> 本站访客数
@@ -454,11 +440,6 @@ vendors:
   # Internal version: 4.6.2
   # See: http://fontawesome.io/
   fontawesome:
-
-  # Internal version: 1
-  # https://www.algolia.com
-  algolia_instant_js:
-  algolia_instant_css:
 
   # Internal version: 1.0.0
   # https://github.com/hustcc/canvas-nest.js

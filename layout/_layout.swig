@@ -33,7 +33,6 @@
           <div id="content" class="content" style="transform: translateY(0px);">
             {% block content %}{% endblock %}
           </div>
-          {% include '_third-party/duoshuo-hot-articles.swig' %}
           {% include '_partials/comments.swig' %}
         </div>
         {% if theme.sidebar.display !== 'remove' %}
@@ -45,7 +44,6 @@
     <footer id="footer" class="footer">
       <div class="footer-inner">
         {% include '_partials/footer.swig' %}
-        {% include '_third-party/analytics/busuanzi-counter.swig' %}
         {% block footer %}{% endblock %}
       </div>
     </footer>
@@ -73,8 +71,6 @@
 
   {% include '_third-party/comments/index.swig' %}
   {% include '_third-party/search/index.swig' %}
-  {% include '_third-party/analytics/lean-analytics.swig' %}
-  {% include '_third-party/seo/baidu-push.swig' %}
   {% include '_third-party/mathjax.swig' %}
   {% include '_third-party/scroll-cookie.swig' %}
   {% include '_third-party/exturl.swig' %}

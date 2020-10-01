@@ -7,7 +7,6 @@
     <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
     <a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a>
     <a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
-    <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
     <a href="#" class="bds_more" data-cmd="more"></a>
     <a class="bds_count" data-cmd="count"></a>
   </div>

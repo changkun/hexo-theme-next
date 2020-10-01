@@ -6,7 +6,7 @@
 favicon: /favicon.ico
 
 # Set default keywords (Use a comma to separate)
-keywords: "Hexo, NexT"
+keywords: "欧长坤, 欧龙崎, Changkun Ou"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -14,7 +14,7 @@ keywords: "Hexo, NexT"
 rss:
 
 # Specify the date when the site was setup
-#since: 2015
+since: 2008
 
 # icon between year and author @Footer
 authoricon: heart
@@ -45,12 +45,13 @@ index_with_subtitle: false
 # When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash (/archives -> archives)
 menu:
   home: /
-  #categories: /categories
-  #about: /about
   archives: /archives
+  # specialization: /specialization
   tags: /tags
-  #sitemap: /sitemap.xml
-  #commonweal: /404.html
+  # thanks: /thanks
+  about: /about
+  # todo: /todo
+  # commonweal: /404.html
 
 
 # Enable/Disable menu icons.
@@ -63,11 +64,12 @@ menu_icons:
   #KeyMapsToMenuItemKey: NameOfTheIconFromFontAwesome
   home: home
   about: user
-  categories: th
-  schedule: calendar
+  # categories: th
   tags: tags
   archives: archive
-  sitemap: sitemap
+  thanks: gift
+  specialization: university
+  more: info-circle
   commonweal: heartbeat
 
 
@@ -78,9 +80,7 @@ menu_icons:
 # ---------------------------------------------------------------
 
 # Schemes
-scheme: Muse
-#scheme: Mist
-#scheme: Pisces
+scheme: Pisces
 
 
 # ---------------------------------------------------------------
@@ -101,7 +101,6 @@ font:
   global:
     # external: true will load this font family from host.
     external: true
-    family: Lato
 
   # Font settings for Headlines (h1, h2, h3, h4, h5, h6)
   # Fallback to `global` font settings.
@@ -140,9 +139,13 @@ font:
 # Social Links
 # Key is the link label showing to end users.
 # Value is the target link (E.g. GitHub: https://github.com/iissnan)
-#social:
-  #LinkLabel: Link
-
+social:
+  Homepage: https://changkun.de/
+  Github: https://github.com/changkun
+  YouTube: https://www.youtube.com/channel/UCtujb7c9eudbVEkAsIRZR3w
+  Facebook: https://www.facebook.com/ouchangkun
+  知乎: http://www.zhihu.com/people/ouchangkun
+  Email: mailto:hi[at]changkun.us
 
 # Social Links Icons
 # Icon Mapping:
@@ -153,15 +156,12 @@ social_icons:
   enable: true
   # Icon Mappings.
   # KeyMapsToSocialItemKey: NameOfTheIconFromFontAwesome
-  GitHub: github
-  Twitter: twitter
-  Weibo: weibo
-
-
-# Sidebar Avatar
-# in theme directory(source/images): /images/avatar.jpg
-# in site  directory(source/uploads): /uploads/avatar.jpg
-#avatar:
+  Homepage: home
+  Github: github
+  Facebook: facebook-official
+  YouTube: youtube
+  知乎: book
+  Email: envelope
 
 
 # Table Of Contents in the Sidebar
@@ -170,14 +170,6 @@ toc:
 
   # Automatically add list number to toc.
   number: true
-
-
-# Creative Commons 4.0 International License.
-# http://creativecommons.org/
-# Available: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero
-#creative_commons: by-nc-sa
-#creative_commons:
-
 
 sidebar:
   # Sidebar Position, available value: left | right
@@ -206,11 +198,12 @@ sidebar:
 
 
 # Blog rolls
-#links_title: Links
-#links_layout: block
-#links_layout: inline
-#links:
-  #Title: http://example.com/
+links_title: Friends
+# links
+links:
+  Frimin | 飞米: https://www.frimin.com/
+  ZZZero | 零: https://www.zz-zero.com/
+  march1993 | 文华: https://march1993.com/en/
 
 
 # ---------------------------------------------------------------
@@ -243,8 +236,13 @@ post_meta:
 # Dependencies: https://github.com/willin/hexo-wordcount
 post_wordcount:
   item_text: true
-  wordcount: false
-  min2read: false
+  wordcount: true
+  min2read: true
+
+
+reward_comment: 打赏催更
+alipay: /images/pay/alipay.jpg
+wechatpay: /images/pay/wechat.jpg
 
 # Wechat Subscriber
 #wechat_subscriber:
@@ -253,10 +251,12 @@ post_wordcount:
   #description: ex. subscribe to my blog by scanning my public wechat account
 
 # Declare license on posts
+# Available: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero
+creative_commons: by-nc-nd
 post_copyright:
-  enable: false
-  license: CC BY-NC-SA 3.0
-  license_url: https://creativecommons.org/licenses/by-nc-sa/3.0/
+  enable: true
+  license: CC BY-NC-ND 4.0
+  license_url: https://creativecommons.org/licenses/by-nc-nd/4.0/
 
 
 
@@ -278,7 +278,7 @@ custom_logo:
 # Available value:
 #    normal | night | night eighties | night blue | night bright
 # https://github.com/chriskempson/tomorrow-theme
-highlight_theme: normal
+highlight_theme: night eighties
 
 
 # ---------------------------------------------------------------
@@ -287,27 +287,18 @@ highlight_theme: normal
 
 # MathJax Support
 mathjax:
-  enable: false
-  per_page: false
+  enable: true
+  # per_page: true
   cdn: //cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 
 
 # Han Support docs: https://hanzi.pro/
 han: false
 
-# Swiftype Search API Key
-#swiftype_key:
-
-# Baidu Analytics ID
-#baidu_analytics:
-
-# Duoshuo ShortName
-#duoshuo_shortname:
-
 # Disqus
 disqus:
-  enable: false
-  shortname:
+  enable: true
+  shortname: changkun
   count: true
 
 # Hypercomments
@@ -322,35 +313,14 @@ changyan:
   appid:
   appkey:
 
-# Support for youyan comments system.
-# You can get your uid from http://www.uyan.cc
-#youyan_uid: your uid
-
-# Support for LiveRe comments system.
-# You can get your uid from https://livere.com/insight/myCode (General web site)
-#livere_uid: your uid
-
-# Baidu Share
-# Available value:
-#    button | slide
-# Warning: Baidu Share does not support https.
-#baidushare:
-##  type: button
-
-# Share
-#jiathis:
-# Warning: JiaThis does not support https.
-#add_this_id:
-
-# Share
-#duoshuo_share: true
-
 # Google Webmaster tools verification setting
 # See: https://www.google.com/webmasters/
-#google_site_verification:
+# google_site_verification: google0bf94c2fa8132e9a
 
+# Baidu Analytics ID
+baidu_analytics: 85f3868c49f37355ac3687e549f804cd
 # Google Analytics
-#google_analytics:
+google_analytics: UA-80889616-2
 
 # Yandex Webmaster tools verification setting
 # See: https://webmaster.yandex.ru/
@@ -358,48 +328,6 @@ changyan:
 
 # CNZZ count
 #cnzz_siteid:
-
-# Application Insights
-# See https://azure.microsoft.com/en-us/services/application-insights/
-# application_insights:
-
-# Make duoshuo show UA
-# user_id must NOT be null when admin_enable is true!
-# you can visit http://dev.duoshuo.com get duoshuo user id.
-duoshuo_info:
-  ua_enable: true
-  admin_enable: false
-  user_id: 0
-  #admin_nickname: Author
-
-
-# Facebook SDK Support.
-# https://github.com/iissnan/hexo-theme-next/pull/410
-facebook_sdk:
-  enable: false
-  app_id:       #<app_id>
-  fb_admin:     #<user_id>
-  like_button:  #true
-  webmaster:    #true
-
-# Facebook comments plugin
-# This plugin depends on Facebook SDK.
-# If facebook_sdk.enable is false, Facebook comments plugin is unavailable.
-facebook_comments_plugin:
-  enable: false
-  num_of_posts: 10  # min posts num is 1
-  width: 100%       # default width is 550px
-  scheme: light     # default scheme is light (light or dark)
-
-# VKontakte API Support.
-# To get your AppID visit https://vk.com/editapp?act=create
-vkontakte_api:
-  enable: false
-  app_id:       #<app_id>
-  like:         true
-  comments:     true
-  num_of_posts: 10
-
 
 # Show number of visitors to each article.
 # You can visit https://leancloud.cn get AppID and AppKey.
@@ -412,30 +340,19 @@ leancloud_visitors:
 # Get more information on http://ibruce.info/2015/04/04/busuanzi/
 busuanzi_count:
   # count values only if the other configs are false
-  enable: false
+  enable: true
   # custom uv span for the whole site
   site_uv: true
-  site_uv_header: <i class="fa fa-user"></i>
-  site_uv_footer:
+  site_uv_header: <i class="fa fa-user"></i> 本站访客数
+  site_uv_footer: 人次
   # custom pv span for the whole site
   site_pv: true
-  site_pv_header: <i class="fa fa-eye"></i>
-  site_pv_footer:
+  site_pv_header: <i class="fa fa-eye"></i> 本站总访问量
+  site_pv_footer: 次
   # custom pv span for one page only
   page_pv: true
-  page_pv_header: <i class="fa fa-file-o"></i>
-  page_pv_footer:
-
-
-# Tencent analytics ID
-# tencent_analytics:
-
-# Tencent MTA ID
-# tencent_mta:
-
-
-# Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO
-baidu_push: false
+  page_pv_header: <i class="fa fa-file-o"></i> 本文总阅读量
+  page_pv_footer: 次
 
 # Google Calendar
 # Share your recent schedule to others via calendar page
@@ -453,17 +370,6 @@ calendar:
   showDeleted: false
   singleEvents: true
   maxResults: 250
-
-# Algolia Search
-algolia_search:
-  enable: false
-  hits:
-    per_page: 10
-  labels:
-    input_placeholder: Search for Posts
-    hits_empty: "We didn't find any results for the search: ${query}"
-    hits_stats: "${hits} results found in ${time} ms"
-
 
 # Local search
 local_search:
@@ -486,7 +392,7 @@ exturl: false
 #! ---------------------------------------------------------------
 
 # Motion
-use_motion: true
+use_motion: false
 
 # Fancybox
 fancybox: true
@@ -590,3 +496,7 @@ images: images
 
 # Theme version
 version: 5.1.1
+
+
+# Personal Addition
+client_version: 0.2.3

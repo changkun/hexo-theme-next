@@ -120,32 +120,6 @@
           </div>
         {% endif %}
 
-
-        <div class="links-of-blogroll motion-element {{ "links-of-blogroll-inline" | default('inline') }}">
-          <div class="links-of-blogroll-title">
-            <i class="fa  fa-fw fa-desktop"></i>
-            客户端
-          </div>
-          <div style="margin-top: 10px;text-align: center;">
-            <a href="https://github.com/changkun/changkun-blog-clients/releases/download/v{{ theme.client_version }}/changkun-blog-desktop-0.2.3.dmg" title="macOS" target="_blank" style="border-width:0px;margin:2px;">
-              <i class="fa  fa-fw fa-apple fa-2x"></i>
-            </a>
-            <a href="https://github.com/changkun/changkun-blog-clients/releases/download/v{{ theme.client_version }}/changkun-blog-desktop_0.2.3_amd64.deb" title="Linux" target="_blank" style="border-width:0px;margin:2px;">
-              <i class="fa  fa-fw fa-linux fa-2x"></i>
-            </a>
-            <a href="https://github.com/changkun/changkun-blog-clients/releases/download/v{{ theme.client_version }}/changkun-blog-desktop-setup-0.2.3.exe" title="Windows" target="_blank" style="border-width:0px;margin:2px;">
-              <i class="fa  fa-fw fa-windows fa-2x"></i>
-            </a>
-            <a href="" title="Android, comming soon" target="_blank" style="border-width:0px;margin:2px;" onclick="return false">
-              <i class="fa  fa-fw fa-android fa-2x"></i>
-            </a>
-            <a href="" title="iOS, comming soon" target="_blank" style="border-width:0px;margin:2px;" onclick="return false">
-              <i class="fa  fa-fw fa-mobile fa-2x"></i>
-            </a>
-          </div>
-        </div>
-
-
         {% include '../_custom/sidebar.swig' %}
 
       </section>

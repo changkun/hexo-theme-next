@@ -21,7 +21,6 @@
   {% endif %}
 
   <div class="{{ container_class }} {% block page_class %}{% endblock %} ">
-    <div id="particles-js" style="position: fixed; width: 100%; height:100%"></div>
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -79,9 +78,6 @@
   {% include '_third-party/mathjax.swig' %}
   {% include '_third-party/scroll-cookie.swig' %}
   {% include '_third-party/exturl.swig' %}
-
-  <script type="text/javascript" src="/js/src/particles.min.js"></script>
-  <script type="text/javascript" src="/js/src/particles.settings.js"></script>
 
 </body>
 </html>

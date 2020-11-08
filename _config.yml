@@ -6,7 +6,7 @@
 favicon: /favicon.ico
 
 # Set default keywords (Use a comma to separate)
-keywords: "欧长坤, 欧龙崎, Changkun Ou"
+keywords: "Changkun Ou, 欧长坤, 欧龙崎"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -144,7 +144,7 @@ social:
   Homepage: https://changkun.de/
   Github: https://github.com/changkun
   YouTube: https://www.youtube.com/channel/UCtujb7c9eudbVEkAsIRZR3w
-  知乎: http://www.zhihu.com/people/ouchangkun
+  Zhihu: http://www.zhihu.com/people/ouchangkun
   Email: mailto:hi[at]changkun.us
 
 # Social Links Icons
@@ -159,7 +159,7 @@ social_icons:
   Homepage: home
   Github: github
   YouTube: youtube
-  知乎: book
+  Zhihu: book
   Email: envelope
 
 
@@ -200,9 +200,9 @@ sidebar:
 links_title: Friends
 # links
 links:
-  Frimin | 飞米: https://www.frimin.com/
-  ZZZero | 零: https://www.zz-zero.com/
-  march1993 | 文华: https://march1993.com/en/
+  Frimin: https://www.frimin.com/
+  ZZZero: https://www.zz-zero.com/
+  march1993: https://march1993.com/en/
 
 
 # ---------------------------------------------------------------
@@ -314,8 +314,6 @@ changyan:
 # See: https://www.google.com/webmasters/
 # google_site_verification: google0bf94c2fa8132e9a
 
-# Baidu Analytics ID
-baidu_analytics: 85f3868c49f37355ac3687e549f804cd
 # Google Analytics
 google_analytics: UA-80889616-2
 

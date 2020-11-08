@@ -13,6 +13,4 @@
   {% endif %}
   <script src="{{ algolia_instant_js }}"></script>
   {# E: Include Algolia instantsearch.js library #}
-
-  <script src="{{ url_for(theme.js) }}/src/algolia-search.js?v={{ theme.version }}"></script>
 {% endif %}
